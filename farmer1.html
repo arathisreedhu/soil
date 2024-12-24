@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #farmerForm {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Farmer Portal</h1>
+    </header>
+    <form id="farmerForm" action="thankyou.html" method="POST" enctype="multipart/form-data">
+        <!-- Farmer Name -->
+        <label for="farmerName">Farmer Name:</label>
+        <input type="text" id="farmerName" name="farmerName" placeholder="Enter your name" required>
+
+        <!-- Age -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age" required>
+
+        <!-- Address -->
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" placeholder="Enter your address" required>
+
+        <!-- Product -->
+        <label for="product">Product:</label>
+        <input type="text" id="product" name="product" placeholder="Enter your product name" required>
+
+        <!-- Product Image -->
+        <label for="productImage">Product Image:</label>
+        <input type="file" id="productImage" name="productImage" accept="image/*" required>
+
+        <!-- Details About Farmer -->
+        <label for="details">Details About You:</label>
+        <textarea id="details" name="details" placeholder="Describe yourself" required></textarea>
+
+        <!-- Price -->
+        <label for="price">Price of Product:</label>
+        <input type="number" id="price" name="price" placeholder="Enter product price" required>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+

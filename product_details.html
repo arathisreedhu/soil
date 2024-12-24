@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1f14;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #0e120a;
+            padding: 10px;
+            text-align: center;
+        }
+        header a {
+            color: #a3d744;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+        }
+        .product-container {
+            padding: 20px;
+        }
+        .product-card {
+            display: none; /* Default: hidden */
+            padding: 20px;
+            background: #25321e;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .product-card img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .product-card h1 {
+            color: #a3d744;
+        }
+        .farmer-card {
+            background: #36412a;
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .farmer-card p, .farmer-card a {
+            color: #bbb;
+        }
+        .farmer-card a {
+            text-decoration: underline;
+            color: #a3d744;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" onclick="showProduct('apple')">Apple</a>
+        <a href="#" onclick="showProduct('banana')">Bananas</a>
+        <a href="#" onclick="showProduct('Mango')">Mango</a>
+        <a href="#" onclick="showProduct('Orange')">Orange</a>
+        <a href="#" onclick="showProduct('Pineapple')">Pineapple</a>
+        <a href="#" onclick="showProduct('Grapes')">Grapes</a>
+        <a href="#" onclick="showProduct('Watermelon')">Watermelon</a>
+        <a href="#" onclick="showProduct('Papaya')">Papaya</a>
+        <a href="#" onclick="showProduct('Strawberry')">Strawberry</a>
+        <a href="#" onclick="showProduct('Kiwi')">Kiwi</a>
+       
+    </header>
+
+    <div class="product-container">
+        <!-- Apple Product -->
+        <div id="apple" class="product-card">
+            <img src="https://images.pexels.com/photos/209439/pexels-photo-209439.jpeg?cs=srgb&dl=pexels-pixabay-209439.jpg&fm=jpg" alt="Apple">
+            <h1>Apple</h1>
+            <p>The beginning pricing for our farmers' apples is Rs. 20 per kilogram.</p>
+            <div class="farmer-card">
+                <p>Farmer: Walter White</p>
+                <p>Price: Rs. 20/KG</p>
+                <p>Location: Anekal, Bengaluru</p>
+                <a href="addtocart.html?productName=Apple&price=20">Add To Cart</a>
+            </div>
+        </div>
+
+        <!-- Banana Product -->
+        <div id="banana" class="product-card">
+            <img src="https://www.fruitsinfo.com/images/bananas.jpg" alt="Bananas">
+            <h1>Bananas</h1>
+            <p>The beginning pricing for our farmers' bananas is Rs. 10 per kilogram.</p>
+            <div class="farmer-card">
+                <p>Farmer: Anthony Das</p>
+                <p>Price: Rs. 10/KG</p>
+                <p>Location: Varthur, Bengaluru</p>
+                <a href="addtocart.html?productName=banana&price=10">Add To Cart</a>
+            </div>
+        </div>
+
+          <!-- Mango Product -->
+        <div id="Mango" class="product-card">
+            <img src="https://img.freepik.com/premium-photo/ready-eat-fresh-mango-aesthetic-look_629685-30201.jpg" alt="Mango">
+            <h1>Mango</h1>
+            <p>The beginning pricing for our farmers' Mango is Rs. 10 per kilogram.</p>
+            <div class="farmer-card">
+                <p>Farmer: chithra</p>
+                <p>Price: Rs. 20/KG</p>
+                <p>Location: Varthur, Bengaluru</p>
+                <a href="addtocart.html?productName=Mango&price=20">Add To Cart</a>
+            </div>
+        </div>
+
+          <!-- Orange Product -->
+        <div id="Orange" class="product-card">
+            <img src="https://orgfarm.store/cdn/shop/files/malda_orange.jpg?v=1721886788&width=1500" alt="Orange">
+            <h1>Orange</h1>
+            <p>The beginning pricing for our farmers'Orange is Rs. 15 per kilogram.</p>
+            <div class="farmer-card">
+                <p>Farmer: rajesh</p>
+                <p>Price: Rs. 20/KG</p>
+                <p>Location: Varthur, Bengaluru</p>
+                <a href="addtocart.html?productName=Orange&price=20">Add To Cart</a>
+            </div>
+        </div>  
+        
+          <!-- Pineapple Product -->
+        <div id="Pineapple" class="product-card">
+            <img src="https://i.pinimg.com/originals/0d/a2/58/0da2585ed983da14509be014e839de3e.jpg" alt="Pineapple">
+            <h1>Pineapple</h1>
+            <p>The beginning pricing for our farmers'Pineappleis Rs. 25 per kilogram.</p>
+            <div class="farmer-card">
+                <p>Farmer: rajesh</p>
+                <p>Price: Rs. 20/KG</p>
+                <p>Location: Varthur, Bengaluru</p>
+                <a href="addtocart.html?productName=Pineapple&price=20">Add To Cart</a>
+            </div>
+        </div>  
+
+          <!-- Grapes Product -->
+        <div id="Grapes" class="product-card">
+            
+            
+            <img src="https://i1.pickpik.com/photos/654/164/54/bunch-cluster-delicious-food-3ac9affee6c1be89dd1099709b0e953d.jpg" alt="Grapes">
+            <h1>Grapes</h1>
+            <p>The beginning pricing for our farmers' Grapes is Rs. 25 per kilogram.</p>
+            <div class="farmer-card">
+                <p>Farmer: manju</p>
+                <p>Price: Rs. 10/KG</p>
+                <p>Location: Varthur, Bengaluru</p>
+                <a href="addtocart.html?productName=Grapes&price=10">Add To Cart</a>
+            </div>
+        </div>  
+
+          <!-- Watermelon Product -->
+        <div id="Watermelon" class="product-card">
+            <img src="https://i.pinimg.com/originals/99/f3/5f/99f35f6da4d48f7d264941da7658f094.jpg" alt="Watermelon">
+            <h1>Watermelon</h1>
+            <p>The beginning pricing for our farmers'Watermelon is Rs. 45 per kilogram.</p>
+            <div class="farmer-card">
+                <p>Farmer: reka</p>
+                <p>Price: Rs. 20/KG</p>
+                <p>Location: Varthur, Bengaluru</p>
+                <a href="addtocart.html?productName=Watermelon&price=20">Add To Cart</a>
+            </div>
+        </div>  
+
+          <!-- Papaya Product -->
+        <div id="Papaya" class="product-card">
+       
+            <img src="https://www.stroke.org/-/media/Images/News/2023/October-2023/1013EIOLIPapaya_SC.jpg?sc_lang=en" alt="Papaya<">
+            <h1>Papaya</h1>
+            <p>The beginning pricing for our farmers'Papaya is Rs. 25 per kilogram.</p>
+            <div class="farmer-card">
+                <p>Farmer: mahesh</p>
+                <p>Price: Rs. 25/KG</p>
+                <p>Location: Varthur, Bengaluru</p>
+                <a href="addtocart.html?productName=Papaya&price=25">Add To Cart</a>
+            </div>
+        </div>  
+
+         <!-- Strawberry Product --> 
+        <div id="Strawberry" class="product-card">
+            <img src="https://foodal.com/wp-content/uploads/2015/03/Make-Strawberry-Season-Last-All-Year.jpg" alt="Strawberry">
+            <h1>Strawberry</h1>
+            <p>The beginning pricing for our farmers'Strawberry is Rs. 25 per kilogram.</p>
+            <div class="farmer-card">
+                <p>Farmer: rajesh</p>
+                <p>Price: Rs. 20/KG</p>
+                <p>Location: Varthur, Bengaluru</p>
+                <a href="addtocart.html?productName=Strawberry&price=20">Add To Cart</a>
+            </div>
+        </div>  
+
+         <!-- Kiwi Product -->
+        <div id="Kiwi" class="product-card">
+            <img src="https://www.health.com/thmb/YjD1m861zN2cGF4q9bbeu6now64=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Kiwi-a2e9888bfab6474f8d12d2ae0287b356.jpg" alt="Kiwi">
+            <h1>Kiwi</h1>
+            <p>The beginning pricing for our farmers'Kiwi is Rs. 25 per kilogram.</p>
+            <div class="farmer-card">
+                <p>Farmer: rajesh</p>
+                <p>Price: Rs. 20/KG</p>
+                <p>Location: Varthur, Bengaluru</p>
+                <a href="addtocart.html?productName=Kiwi&price=20">Add To Cart</a>
+            </div>
+        </div>  
+        
+    </div>
+
+    <script>
+        // Function to display the selected product and hide others
+        function showProduct(productId) {
+            // Hide all product cards
+            const products = document.querySelectorAll('.product-card');
+            products.forEach(product => product.style.display = 'none');
+            
+            // Show the selected product
+            document.getElementById(productId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+

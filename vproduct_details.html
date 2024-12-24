@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetable Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1f14;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #0e120a;
+            padding: 10px;
+            text-align: center;
+        }
+        header a {
+            color: #a3d744;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+        }
+        .product-container {
+            padding: 20px;
+        }
+        .product-card {
+            display: none; /* Default: hidden */
+            padding: 20px;
+            background: #25321e;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .product-card img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .product-card h1 {
+            color: #a3d744;
+        }
+        .farmer-card {
+            background: #36412a;
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .farmer-card p, .farmer-card a {
+            color: #bbb;
+        }
+        .farmer-card a {
+            text-decoration: underline;
+            color: #a3d744;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" onclick="showProduct('tomato')">Tomato</a>
+        <a href="#" onclick="showProduct('potato')">Potato</a>
+        <a href="#" onclick="showProduct('carrot')">Carrot</a>
+        <a href="#" onclick="showProduct('onion')">Onion</a>
+        <a href="#" onclick="showProduct('cabbage')">Cabbage</a>
+        <a href="#" onclick="showProduct('cauliflower')">Cauliflower</a>
+        <a href="#" onclick="showProduct('beans')">Beans</a>
+        <a href="#" onclick="showProduct('corn')">Corn</a>
+        <a href="#" onclick="showProduct('pumpkin')">Pumpkin</a>
+        <a href="#" onclick="showProduct('beetroot')">Beetroot</a>
+    </header>
+
+    <div class="product-container">
+        <!-- Tomato -->
+        <div id="tomato" class="product-card">
+            <img src="https://cdn.pixabay.com/photo/2022/09/05/09/50/tomatoes-7433786_1280.jpg" alt="Tomato">
+            <h1>Tomato</h1>
+            <p>Our farmers offer fresh tomatoes starting at Rs. 15 per kilogram.</p>
+            <div class="farmer-card">
+                <p>Farmer: Walter White</p>
+                <p>Price: Rs. 15/KG</p>
+                <p>Location: Anekal, Bengaluru</p>
+                <a href="addtocart.html?productName=Tomato&price=15">Add To Cart</a>
+            </div>
+        </div>
+
+        <!-- Potato -->
+        <div id="potato" class="product-card">
+            <img src="https://nutritionsource.hsph.harvard.edu/wp-content/uploads/2014/01/potatoes-411975_1280.jpg" alt="Potato">
+            <h1>Potato</h1>
+            <p>Our farmers offer fresh potatoes starting at Rs. 20 per kilogram.</p>
+            <div class="farmer-card">
+                <p>Farmer: Anthony Das</p>
+                <p>Price: Rs. 20/KG</p>
+                <p>Location: Varthur, Bengaluru</p>
+                <a href="addtocart.html?productName=Potato&price=20">Add To Cart</a>
+            </div>
+        </div>
+
+        <!-- Carrot -->
+        <div id="carrot" class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3uhIjsryzXJpJD79_5Hs_nkC4O0kgm4laJg&s" alt="Carrot">
+            <h1>Carrot</h1>
+            <p>Our farmers offer fresh carrots starting at Rs. 30 per kilogram.</p>
+            <div class="farmer-card">
+                <p>Farmer: Chithra</p>
+                <p>Price: Rs. 30/KG</p>
+                <p>Location: Varthur, Bengaluru</p>
+                <a href="addtocart.html?productName=Carrot&price=30">Add To Cart</a>
+            </div>
+        </div>
+
+        <!-- Onion -->
+        <div id="onion" class="product-card">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2023/5/310259361/HQ/WP/CY/156819488/onion-250x250.jpeg" alt="Onion">
+            <h1>Onion</h1>
+            <p>Our farmers offer fresh onions starting at Rs. 18 per kilogram.</p>
+            <div class="farmer-card">
+                <p>Farmer: Rajesh</p>
+                <p>Price: Rs. 18/KG</p>
+                <p>Location: Varthur, Bengaluru</p>
+                <a href="addtocart.html?productName=Onion&price=18">Add To Cart</a>
+            </div>
+        </div>
+
+        <!-- Cabbage -->
+        <div id="cabbage" class="product-card">
+            <img src="https://media.istockphoto.com/id/673162168/photo/green-cabbage-isolated-on-white.jpg?s=612x612&w=0&k=20&c=mCc4mXATvCcfp2E9taRJBp-QPYQ_LCj6nE1D7geaqVk=" alt="Cabbage">
+            <h1>Cabbage</h1>
+            <p>Fresh cabbages available at Rs. 25 per kilogram.</p>
+            <div class="farmer-card">
+                <p>Farmer: Pooja Kumar</p>
+                <p>Price: Rs. 25/KG</p>
+                <p>Location: Hosur, Tamil Nadu</p>
+                <a href="addtocart.html?productName=Cabbage&price=25">Add To Cart</a>
+            </div>
+        </div>
+
+        <!-- Cauliflower -->
+        <div id="cauliflower" class="product-card">
+            <img src="https://m.media-amazon.com/images/I/71OM41VsqXL._AC_UF1000,1000_QL80_.jpg" alt="Cauliflower">
+            <h1>Cauliflower</h1>
+            <p>Fresh cauliflower starting at Rs. 28 per kilogram.</p>
+            <div class="farmer-card">
+                <p>Farmer: Suresh Naik</p>
+                <p>Price: Rs. 28/KG</p>
+                <p>Location: Mysuru, Karnataka</p>
+                <a href="addtocart.html?productName=Cauliflower&price=28">Add To Cart</a>
+            </div>
+        </div>
+
+        <!-- Beans -->
+        <div id="beans" class="product-card">
+            <img src="https://cdn.mothersalwaysright.com/wp-content/uploads/2024/08/Bush-Beans-.jpg" alt="Beans">
+            <h1>Beans</h1>
+            <p>Fresh beans at Rs. 35 per kilogram.</p>
+            <div class="farmer-card">
+                <p>Farmer: Arvind Rao</p>
+                <p>Price: Rs. 35/KG</p>
+                <p>Location: Chikkaballapur, Karnataka</p>
+                <a href="addtocart.html?productName=Beans&price=35">Add To Cart</a>
+            </div>
+        </div>
+
+        <!-- Corn -->
+        <div id="corn" class="product-card">
+            <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2023/6/28/fresh-corn-on-the-cob-partially-shucked-on-dark-background.jpg.rend.hgtvcom.1280.1280.85.suffix/1687987003387.webp" alt="Corn">
+            <h1>Corn</h1>
+            <p>Fresh corn available at Rs. 40 per kilogram.</p>
+            <div class="farmer-card">
+                <p>Farmer: Meena Raj</p>
+                <p>Price: Rs. 40/KG</p>
+                <p>Location: Mandya, Karnataka</p>
+                <a href="addtocart.html?productName=Corn&price=40">Add To Cart</a>
+            </div>
+        </div>
+
+        <!-- Pumpkin -->
+        <div id="pumpkin" class="product-card">
+            <img src="https://cdn.stocksnap.io/img-thumbs/280h/pumpkin-table_TRLQLVII6S.jpg" alt="Pumpkin">
+            <h1>Pumpkin</h1>
+            <p>Fresh pumpkins starting at Rs. 22 per kilogram.</p>
+            <div class="farmer-card">
+                <p>Farmer: Vijay</p>
+                <p>Price: Rs. 22/KG</p>
+                <p>Location: Hassan, Karnataka</p>
+                <a href="addtocart.html?productName=Pumpkin&price=22">Add To Cart</a>
+            </div>
+        </div>
+
+        <!-- Beetroot -->
+        <div id="beetroot" class="product-card">
+            <img src="https://www.avogel.com.au/images/recipe-page/beetroot-main-image.jpg" alt="Beetroot">
+            <h1>Beetroot</h1>
+            <p>Fresh beetroots available at Rs. 32 per kilogram.</p>
+            <div class="farmer-card">
+                <p>Farmer: Ramesh Kumar</p>
+                <p>Price: Rs. 32/KG</p>
+                <p>Location: Tumkur, Karnataka</p>
+                <a href="addtocart.html?productName=Beetroot&price=32">Add To Cart</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to display the selected product and hide others
+        function showProduct(productId) {
+            const products = document.querySelectorAll('.product-card');
+            products.forEach(product => product.style.display = 'none');
+            document.getElementById(productId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>

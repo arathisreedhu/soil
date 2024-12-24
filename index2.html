@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech2etc Till the Soil</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #03df3a;
+        }
+        #navbar {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        #navbar li {
+            display: inline;
+        }
+        #navbar a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+        }
+        header {
+            text-align: center;
+            margin: 20px 0;
+        }
+        /* Home container styles with background image */
+        .home-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px;
+            padding: 40px 20px;
+            background-image: url('images/bag1.png.jpeg'); /* Add your background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .option {
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .option img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .option a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .option a:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="images/logo.png.jpeg" class="logo" alt="Till The Soil"> </a>
+        <div>
+            <ul id="navbar">
+                <li><a href="customer.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>    
+            </ul>
+        </div>
+    </section>
+    <header>
+        <h1>Welcome to Till the Soil</h1>
+        <p>Connecting Farmers and Consumers Directly</p>
+    </header>
+    <div class="home-container">
+        <div class="option">
+            <h2>Farmers</h2>
+            <img src="images/fam.png.jpeg" class="Farmer" alt="Farmer">
+            <a href="farmer_login.html">Explore Farmers</a>
+        </div>
+        <div class="option">
+            <h2>Consumers</h2>
+            <img src="images/cus.png.jpeg" alt="Consumer">
+            <a href="farmer_login.html">Explore Consumers</a>
+        </div>
+    </div>
+</body>
+</html>
